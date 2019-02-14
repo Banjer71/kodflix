@@ -10,7 +10,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             {/* Edit <code>src/App.js</code> and save to reload. */}
-            Welcome to Kodflix
+            <h1>Welcome to the Kodflix</h1>
           </p>
           <a
             className="App-link"
