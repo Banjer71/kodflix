@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
+import goonies from './img/goonies.jpg';
+import brother from './img/brothers.jpg';
+import wargames from './img/wargames.jpg';
+import strangeThings from './img/strange_things.jpg';
+import firstMan from './img/first_man.jpg';
+import backtothefuture from './img/backtothefuture.jpg';
 
-import goonies from './img/goonies.jpg'
-import brother from './img/brothers.jpg'
-import wargames from './img/wargames.jpg'
-import strangeThings from './img/strange_things.jpg'
-import firstMan from './img/first_man.jpg'
-import backtothefuture from './img/backtothefuture.jpg'
 import  './App.css';
 
 
