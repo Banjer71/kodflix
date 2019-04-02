@@ -17,14 +17,44 @@ class App extends Component {
       <div className='App'>
        
       <div className='container'>
-        <div className= 'item'><img src={goonies} alt='cover' /></div>
-        <div className= 'item'><img src={brother} alt='cover' /></div>
-        <div className= 'item'><img src={wargames} alt='cover' /></div>
+        <div className= 'item'>
+          <img src={goonies} alt='cover' />
+          <div className='overlay'>
+            <h2>The Goonies</h2>
+          </div>
+        </div>
+        <div className= 'item'>
+          <img src={brother} alt='cover' />
+          <div className='overlay'>
+            <h2>Brother Where are Thou</h2>
+          </div>
+          </div>
+        <div className= 'item'>
+          <img src={wargames} alt='cover' />
+          <div className='overlay'>
+            <h2>Wargames</h2>
+          </div>
+          </div>
       </div>
       <div className='container'>
-        <div className= 'item'><img src={backtothefuture} alt='cover' /></div>
-        <div className= 'item'><img src={strangeThings} alt='cover' /></div>
-        <div className= 'item'><img src={firstMan} alt='cover' /></div>
+        <div className= 'item'>
+          <img src={backtothefuture} alt='cover' />
+          <div className='overlay'>
+            <h2>Back To The Future</h2>
+          </div>
+          </div>
+        <div className= 'item'>
+          <img src={strangeThings} alt='cover' />
+          <div className='overlay'>
+            <h2>Strance Things</h2>
+          </div>
+          </div>
+        <div className= 'item'>
+          <img src={firstMan} alt='cover' />
+          <div className='overlay'>
+            <h2>First Man</h2>
+          </div>
+          </div>
       </div>
         
       </div>
