@@ -13,6 +13,7 @@
   flex: 1;
   border: 1px solid #000;
   position: relative;
+  overflow: hidden;
 }
 
 .item img {
@@ -22,10 +23,9 @@
 
 
 .overlay {
-  
-  display: none;
+  transition: bottom ease 0.5s;  
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   width: 100%;
   background-color: rgba(29,29,29,0.5);
@@ -35,7 +35,7 @@
 
 
 .item:hover .overlay {
-  display: block;
+  bottom: 0;
 }
 
 
