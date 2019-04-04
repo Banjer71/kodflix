@@ -12,11 +12,15 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .item {
-  flex: 1;
+  /* flex: 1;
+  flex-basis: 120px; */
   border: 1px solid #000;
   position: relative;
   overflow: hidden;
@@ -47,13 +51,13 @@ body {
 }
 
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
 
   .container {
     flex-direction: column;
   }
 
-}
+} */
 
 
 

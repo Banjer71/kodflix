@@ -16,8 +16,6 @@ function MovieGrid() {
             <Movie id='goonies' name='The Goonies' cover={goonies} />
             <Movie id='brotherwht'name='Brother Where are Thou' cover={brother} />
             <Movie id='warganmes'name='WarGames' cover={wargames} />
-          </div>
-          <div className='container'>
             <Movie id='backtothefuture' name='Back To The Future' cover={backtothefuture} />
             <Movie id='strangethings' name='Strange Things' cover={strangeThings} />
             <Movie id='firstman' name='First Man' cover={firstMan} />
