@@ -13,14 +13,14 @@ function MovieGrid() {
     return (
       <div>
       <div className='container'>
-            <Movie name='The Goonies' cover={goonies} />
-            <Movie name='Brother Where are Thou' cover={brother} />
-            <Movie name='WarGames' cover={wargames} />
+            <Movie id='goonies' name='The Goonies' cover={goonies} />
+            <Movie id='brotherwht'name='Brother Where are Thou' cover={brother} />
+            <Movie id='warganmes'name='WarGames' cover={wargames} />
           </div>
           <div className='container'>
-            <Movie name='Back To The Future' cover={backtothefuture} />
-            <Movie name='Strange Things' cover={strangeThings} />
-            <Movie name='First Man' cover={firstMan} />
+            <Movie id='backtothefuture' name='Back To The Future' cover={backtothefuture} />
+            <Movie id='strangethings' name='Strange Things' cover={strangeThings} />
+            <Movie id='firstman' name='First Man' cover={firstMan} />
           </div>
       </div>
     )
