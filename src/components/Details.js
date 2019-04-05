@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 
-
-
 class Details extends Component {
     constructor() {
         super();
@@ -11,8 +9,6 @@ class Details extends Component {
             welcomeMessage: 'Hello to the deatils page'
         }
     }
-
-
     componentDidMount() {
         setTimeout(() => {
             this.setState({
@@ -29,8 +25,5 @@ class Details extends Component {
         )
     }
 }
-
-
-
 
 export default Details
