@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import getMovie from './GetMovie';
 
 class Details extends Component {
@@ -14,19 +14,22 @@ class Details extends Component {
         let movie_id = this.props.match.params.movie_id;
         let getmovie = getMovie()
             .find( (getmovie) => getmovie.id === movie_id);
-        this.setState({
-            getmovie
-        });
+        this.setState({ getmovie });
 
     }
 
     render() {
-        return (
-            <div>
-                <h1>{this.state.getmovie.name}</h1>
-                <Link to='/'>Back to the Homepage</Link>
-            </div>
-        )
+        if(this.state.getmovie === undefined) {
+            return <Redirect to='/not-found' />
+        } else {
+            return (
+                <div>
+                    <h1>{this.state.getmovie.name}</h1>
+                    <Link to='/'>Back to the Homepage</Link>
+                </div>
+            )
+        }
+        
     }
 }
 
