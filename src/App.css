@@ -21,7 +21,8 @@ body {
 .item {
   /* flex: 1;
   flex-basis: 120px; */
-  border: 1px solid #000;
+  border: 3px solid rgb(201, 37, 37);
+  border-radius: 6px;
   position: relative;
   overflow: hidden;
   margin: 10px;
@@ -33,7 +34,6 @@ body {
   height: 480px;
 }
 
-
 .overlay {
   transition: bottom ease 0.5s;  
   position: absolute;
@@ -44,20 +44,20 @@ body {
   color: #fff;
 }
 
-
-
 .item:hover .overlay {
   bottom: 0;
 }
 
+ a {
+  color: #fff;
+}
 
-/* @media only screen and (max-width: 600px) {
 
-  .container {
-    flex-direction: column;
-  }
+@media only screen and (min-width: 600px) {
 
-} */
+  
+
+}
 
 
 

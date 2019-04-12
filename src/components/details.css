@@ -1,0 +1,27 @@
+
+.text {
+    padding: .5rem;
+}
+
+.cover-image {
+    padding: 25px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+/* media query  */
+
+
+@media only screen and (min-width: 600px) {
+
+    .cover-image {
+        padding: 25px;
+        height: 450px;
+    }
+
+    .text {
+        padding: 3rem;
+        text-align: left;
+    }
+    
+}
