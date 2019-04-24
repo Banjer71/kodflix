@@ -1,5 +1,4 @@
 
-
 module.exports = function getMovie() {
     return [
       {id:'goonies', name:'The Goonies', synopsis: `Old-fashioned yarn about a band of adventurous kids who take on the might of a property developing company which plans to destroy their home to build a country club. When the children discover an old pirate map in the attic, they follow it into an underground cavern in search of lost treasure but come up against plenty of dangerous obstacles along the way.`},
