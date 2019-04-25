@@ -11,6 +11,8 @@ class Details extends Component {
         };
     }
 
+
+    
     componentDidMount() {
         let movie_id = this.props.match.params.movie_id;
         let getmovie = getMovie().find((getmovie) => getmovie.id === movie_id);
