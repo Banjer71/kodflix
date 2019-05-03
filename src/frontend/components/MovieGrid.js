@@ -6,9 +6,17 @@ import getMovie from './GetMovie';
 
 
 function MovieGrid() {
+  fetch('/rest/shows')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(JSON.stringify(myJson));
+  });
+
     return (
       <div>
-      <div className='container'>
+        <div className='container'>
             {
               getMovie().map(movie => (
                 <Movie 
@@ -22,8 +30,5 @@ function MovieGrid() {
       </div>
     )
   }
-
-
-
 
 export default MovieGrid
