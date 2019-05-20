@@ -1,34 +1,42 @@
 import React from 'react';
 
 import Movie from './Movie';
-import getMovie from './GetMovie';
+//import getMovie from './GetMovie';
 
 
 
-function MovieGrid() {
+class MovieGrid extends React.Component {
+  constructor() {
+    super();
+    this.state = { shows: [] }
+  }
+
+  componentDidMount() {
   fetch('/rest/shows')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(myJson) {
-    console.log(JSON.stringify(myJson));
-  });
+    .then(response =>  response.json())
+    .then(shows => this.setState({ shows }));
+    // console.log(JSON.stringify(myJson));
+  }
 
+render() {
     return (
       <div>
         <div className='container'>
             {
-              getMovie().map(movie => (
-                <Movie 
+              this.state.shows.map(movie => {
+                return (
+                  <Movie 
                 key={movie.id}
                 id={movie.id} 
                 name={movie.name} 
-                cover={movie.cover} />
-                ))
+                cover={movie.cover} 
+                />
+                );
+              })
             }
           </div>
       </div>
-    )
+    );
   }
-
+}
 export default MovieGrid
