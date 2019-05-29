@@ -4,6 +4,10 @@ body {
   color: #fff;
 }
 
+#root, .App, .App > * {
+  height: 100%;
+}
+
 .App {
   text-align: center;
   background-color: #1d1d1d;

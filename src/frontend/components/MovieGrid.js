@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Movie from './Movie';
+import Loading from './Loading'
 //import getMovie from './GetMovie';
 
 
@@ -33,9 +34,12 @@ render() {
                 />
                 );
               })
+            
             }
           </div>
+          <Loading />
       </div>
+    
     );
   }
 }

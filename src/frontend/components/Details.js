@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 //import getMovie from './GetMovie';
+import Loading from './Loading'
 import './details.css';
 
 
@@ -28,6 +29,9 @@ class Details extends Component {
     }
 
     render() {
+        // if (!this.state.getmovie.hasOwnProperty("id")) {
+        //     return <Loading />
+        // }
         if (this.state.getmovie) {
             return this.state.getmovie.id ?
                 <div>
@@ -40,7 +44,7 @@ class Details extends Component {
                     </div>
                     <Link to='/'>Back to the Homepage</Link> 
                   </div> : 
-                <div />
+                  <Loading />
         } else {
             return (
                 <div>
