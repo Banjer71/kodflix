@@ -37,7 +37,7 @@ render() {
             
             }
           </div>
-          <Loading />
+          {/* <Loading /> */}
       </div>
     
     );
