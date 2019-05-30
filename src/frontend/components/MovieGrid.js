@@ -22,6 +22,7 @@ class MovieGrid extends React.Component {
 render() {
     return (
       <div>
+      <Loading />
         <div className='container'>
             {
               this.state.shows.map(movie => {
@@ -34,10 +35,10 @@ render() {
                 />
                 );
               })
-            
+             
             }
           </div>
-          {/* <Loading /> */}
+          
       </div>
     
     );
